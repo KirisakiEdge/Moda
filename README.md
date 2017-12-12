@@ -1,1 +1,1 @@
-# Moda
+# Program is calculating moda
