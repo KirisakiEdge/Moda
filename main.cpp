@@ -22,6 +22,20 @@ void main()
 	size++;
 	cout << Arr[q] << " ";
 	}
+	
+	for (int i = 0; i < N; i++) 
+	{
+		if (cmax > rmax) 
+		{
+			rmax = cmax;
+			max = Arr[i - 1];
+		}
+		cmax = 0;
+
+		for (int j = i; j < size; j++)
+			if (Arr[j] == Arr[i])
+				cmax++;
+	}
 
 	cout << "\nMode of these elements: " << max << endl;
 	
